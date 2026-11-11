@@ -119,10 +119,6 @@
     .certs a{display:inline-flex;align-items:center;min-height:22px}
     .method{border-top:1px solid #2a2d27}
     .method .section-title{max-width:900px}
-    .method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(17px,4vw,60px);margin-top:46px}
-    .method-grid div{padding-top:21px;border-top:1px solid #ffffff34}
-    .method-grid h3{color:#e6f3db;margin:0;font-size:clamp(20px,2.35vw,32px);line-height:1.16;letter-spacing:-.038em}
-    .method-grid p{color:var(--dim);margin-top:10px;line-height:1.6}
     .hustle{background:#dce9d2;color:#192318;border-top:1px solid #cad9c4}
     .hustle-layout{display:grid;grid-template-columns:minmax(0,.87fr) minmax(0,1.13fr);align-items:start;gap:clamp(28px,6vw,105px)}
     .hustle .section-title{font-size:clamp(58px,12vw,175px);letter-spacing:-.09em}
@@ -137,9 +133,8 @@
     footer a:hover{text-decoration:underline}
     @media(max-width:760px){
       .note-layout,.security-layout,.hustle-layout{grid-template-columns:1fr}
-      .lab-grid,.method-grid{grid-template-columns:1fr}
+      .lab-grid{grid-template-columns:1fr}
       .lab-step{min-height:auto}
-      .method-grid{gap:23px}
       .timeline li{grid-template-columns:1fr;gap:8px}
       .motion .statement{min-height:145svh}
       .motion .divider{min-height:116svh}
@@ -162,7 +157,7 @@
         <a href="#work" data-i18n="cybersecurity">Cybersecurity</a>
         <a href="#development" data-i18n="development">Development</a>
         <a href="#experience" data-i18n="experience">Experience</a>
-        <a href="#method" data-i18n="method">How I work</a>
+        <a href="#method" data-i18n="mission">My mission</a>
         <a href="#hustle">Hustle</a>
         <a href="#contact" data-i18n="contact">Contact</a>
       </div>
@@ -301,13 +296,8 @@
 
     <section class="section method" id="method" aria-labelledby="method-title">
       <div class="wrap">
-        <p class="eyebrow reveal" data-i18n="method">How I work</p>
-        <h2 id="method-title" class="section-title reveal" data-i18n="methodHeading">Build it. Test the assumptions.</h2>
-        <div class="method-grid reveal">
-          <div><h3 data-i18n="build">Build</h3><p data-i18n="buildCopy">I work with Java, SQL and Flutter on applications, and TypeScript on plugins and browser interfaces.</p></div>
-          <div><h3 data-i18n="test">Test</h3><p data-i18n="testCopy">I read the code, inspect behavior with Burp Suite and use small Python scripts to repeat checks.</p></div>
-          <div><h3 data-i18n="document">Document</h3><p data-i18n="documentCopy">I record what changed, what I observed and what still needs verification so someone else can pick up the work.</p></div>
-        </div>
+        <h2 id="method-title" class="section-title reveal" data-i18n="mission">My mission</h2>
+        <p class="lead reveal" data-i18n="missionCopy">I want to build something big. I take that ambition seriously, so I keep my feet on the ground and focus on what I can do today. I want to see how far I can get, one step at a time.</p>
       </div>
     </section>
 
@@ -3915,7 +3905,7 @@ fQRJiJOnmM4939emWBVbYA==
       cybersecurity: ['Ciberseguridad', 'Ciberseguretat'],
       development: ['Desarrollo', 'Desenvolupament'],
       experience: ['Experiencia', 'Experiència'],
-      method: ['Cómo trabajo', 'Com treballo'],
+      mission: ['Mi misión', 'La meva missió'],
       contact: ['Contacto', 'Contacte'],
       name: ['Soy Joan del Tio Barberà.', 'Soc en Joan del Tio Barberà.'],
       role: ['Ciberseguridad ofensiva y desarrollo de software', 'Ciberseguretat ofensiva i desenvolupament de programari'],
@@ -3988,21 +3978,9 @@ fQRJiJOnmM4939emWBVbYA==
         'Un ensayo sobre quién financia el Estado del bienestar español, quién se beneficia de la subida del precio de los activos y cómo afecta esa diferencia a los trabajadores jóvenes.',
         'Un assaig sobre qui finança l’Estat del benestar espanyol, qui es beneficia de la pujada del preu dels actius i com afecta aquesta diferència als treballadors joves.'
       ],
-      methodHeading: ['Construir y poner a prueba las suposiciones.', 'Construir i posar a prova els supòsits.'],
-      build: ['Construir', 'Construir'],
-      buildCopy: [
-        'Trabajo con Java, SQL y Flutter para desarrollar aplicaciones, y con TypeScript para crear plugins e interfaces web.',
-        'Treballo amb Java, SQL i Flutter per desenvolupar aplicacions, i amb TypeScript per crear connectors i interfícies web.'
-      ],
-      test: ['Probar', 'Provar'],
-      testCopy: [
-        'Leo el código, examino su comportamiento con Burp Suite y uso pequeños scripts en Python para repetir comprobaciones.',
-        'Llegeixo el codi, n’examino el comportament amb Burp Suite i faig servir petits scripts en Python per repetir comprovacions.'
-      ],
-      document: ['Documentar', 'Documentar'],
-      documentCopy: [
-        'Dejo por escrito qué ha cambiado, qué he observado y qué falta por verificar para que otra persona pueda retomar el trabajo.',
-        'Deixo per escrit què ha canviat, què he observat i què falta per verificar perquè una altra persona pugui reprendre la feina.'
+      missionCopy: [
+        'Quiero hacer algo grande. Me tomo en serio esa ambición, por eso mantengo los pies en la tierra y me centro en lo que puedo hacer hoy. Quiero ver hasta dónde puedo llegar, paso a paso.',
+        'Vull fer alguna cosa gran. Em prenc seriosament aquesta ambició, per això toco de peus a terra i em centro en el que puc fer avui. Vull veure fins on puc arribar, pas a pas.'
       ],
       hustleHeading: ['Empiezo antes de sentirme preparado.', 'Començo abans de sentir-me preparat.'],
       hustleCopy: [
